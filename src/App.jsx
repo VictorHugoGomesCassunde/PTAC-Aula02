@@ -1,6 +1,6 @@
 export default function App() {
 
-  const nome = "João Santos";
+  const nome = "Victor Hugo";
   
   return(
     <div>
