@@ -1,0 +1,11 @@
+header{
+    text-align: center;
+    background: linear-gradient((yellow),(green));
+    border-bottom: 10px rgb(255, 0, 0) solid;
+}
+
+footer{
+    text-align: center;
+    background: (rgb(226, 156, 16));
+    border-radius: 10px;
+}
