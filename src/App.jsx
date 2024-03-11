@@ -5,7 +5,6 @@ export default function App() {
 
   return(
   <main>
-   
     <Footer/>
     <Haeder/>
   </main>
