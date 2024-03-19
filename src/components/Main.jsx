@@ -14,16 +14,18 @@ export default function Main(){
                 id=""
                 onChange={(event)=> setNome(event.target.value)}
                 />
+<br></br>
+<br></br>
+<br></br>
+                     <label htmlFor="telefone">Telefone:</label>
+                   <input
+                     type=""
+                      name=""
+                      id=""
+                      onChange={(event) => setTelefone(event.target.value)}
+            />
 
-                <label htmlFor="telefone">Telefone</label>
-                <inport
-                type="tel"
-                id="telefone"
-                value={telefone}
-                onChange={(event)=> setTelefone(event.target.value)}
-                />
-
-                <button type="submit">Enviar</button>
+                <button type="submit">testar</button>
 
 
             </form>
