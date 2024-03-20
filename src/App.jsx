@@ -7,6 +7,8 @@ export default function App() {
   return(
   <main>
     <Haeder/>
+    <br></br>
+    <br></br>
     <Main/>
     <Footer/>
   </main>

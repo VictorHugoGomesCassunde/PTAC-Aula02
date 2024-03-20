@@ -5,30 +5,33 @@ export default function Main(){
     const [telefone, setTelefone] = useState("");
 
     return(
-        <maina>
+        <main>
             <form>
-                <label htmlFor="nome">Nome</label>
+                <label htmlFor="nome">Nome :</label>
                 <input
                 type="text"
                 name=""
                 id=""
                 onChange={(event)=> setNome(event.target.value)}
                 />
+                <br></br>
+                {nome}
 <br></br>
-<br></br>
-<br></br>
-                     <label htmlFor="telefone">Telefone:</label>
+
+                     <label htmlFor="telefone">Telefone :</label>
                    <input
                      type=""
                       name=""
                       id=""
                       onChange={(event) => setTelefone(event.target.value)}
-            />
+            /><br></br>
+            {telefone}
+<br></br>
 
-                <button type="submit">testar</button>
+                <button type="submit">mandar</button>
 
 
             </form>
-        </maina>
+        </main>
     );
 }
