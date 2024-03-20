@@ -3,12 +3,13 @@ header{
     text-align: center;
     height: 100%;
     background: linear-gradient(#70f3ff, #79e38e);
-    border-bottom: 2px rgb(0, 0, 0) solid;
+    border-bottom: 5px rgb(0, 0, 0) solid;
     border: 5px solid #000000;
 }
 
 footer{
     font-family: Bradley Hand, cursive;
+    font-size: 20px;
     text-align: center;
     background: linear-gradient(#70f3ff, #79e38e);
     border-top: 5px solid #000000;
@@ -24,4 +25,9 @@ form{
 }
 input{
     font-size: 18px;
+}
+button{
+    font-family: Bradley Hand, cursive;
+    font-size: large;
+    background: linear-gradient(#70f3ff, #79e38e);
 }

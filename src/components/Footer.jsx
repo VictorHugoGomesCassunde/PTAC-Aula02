@@ -1,7 +1,7 @@
 export default function Footer(){
     return(
         <footer>
-            <p>Desenvolvido por Victor Hugo Gomes Cassundé</p>      
+            <p>&copy; Victor Hugo Gomes Cassundé</p>      
         </footer>
 
     );
