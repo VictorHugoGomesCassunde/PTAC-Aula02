@@ -53,7 +53,7 @@ onChange={(event) => setCpf(event.target.value)}
 />
 
 
-{cpf}
+
                 <button type="submit">mandar</button>
 
 
