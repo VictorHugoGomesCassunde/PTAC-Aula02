@@ -42,9 +42,18 @@ export default function Main(){
                       value={telefone}
                       onChange={(event) => setTelefone(event.target.value)}
             /><br></br>
-            
 <br></br>
+         <label htmlFor="cpf">Cpf :</label>
+<input
+type=""
+name=""
+id=""
+value={cpf}
+onChange={(event) => setCpf(event.target.value)}
+/>
 
+
+{cpf}
                 <button type="submit">mandar</button>
 
 
