@@ -4,14 +4,16 @@ export default function Main(){
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState();
     const [listaContatos, setContatos] = useState([]);
-
-      const registrar = (event) => {
+    const [cpf, setCpf] = useState();
+    
+       const registrar = (event) => {
         event.preventDefault();
-            alert("Tudo errado, seu burro");
+            alert("ta certo, eu que fiz");
             setContatos([...listaContatos,
             {
             nomeSalvo: nome,
-            telefoneSalvo: telefone
+            telefoneSalvo: telefone,
+            cpfSalvo: cpf,
             }
             ]);
             console.table(listaContatos);
