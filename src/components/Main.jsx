@@ -4,16 +4,16 @@ export default function Main(){
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState();
     const [listaContatos, setContatos] = useState([]);
-    const [cpf, setCpf] = useState();
+    const [região, setRegião] = useState();
     
        const registrar = (event) => {
         event.preventDefault();
-            alert("ta certo, eu que fiz");
+            alert("Oxi?, tá certo mesmo");
             setContatos([...listaContatos,
             {
             nomeSalvo: nome,
             telefoneSalvo: telefone,
-            cpfSalvo: cpf,
+            RegiãoSalvo: região,
             }
             ]);
             console.table(listaContatos);
@@ -43,12 +43,12 @@ export default function Main(){
                       onChange={(event) => setTelefone(event.target.value)}
             /><br></br>
 <br></br>
-         <label htmlFor="cpf">Cpf :</label>
+         <label htmlFor="região">Região :</label>
 <input
 type=""
 name=""
 id=""
-value={cpf}
+value={região}
 onChange={(event) => setCpf(event.target.value)}
 />
 
