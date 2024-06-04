@@ -16,7 +16,13 @@ export default function Main(){
             regiaoSalvo: regiao,
             }
             ]);
-            console.table(listaContatos);
+            console.table([...listaContatos,
+            {
+            nomeSalvo: nome,
+            telefoneSalvo: telefone,
+            regiaoSalvo: regiao,
+            }
+            ]);
        }
            const remover = (id) => {
                const novaLista = listaContatos.filter(
@@ -38,8 +44,8 @@ export default function Main(){
                 <label htmlFor="nome">Nome :</label>
                 <input
                 type="text"
-                name=""
-                id=""
+                name="nome"
+                id="nome"
                 value={nome}
                 onChange={(event)=> setNome(event.target.value)}
                 />
@@ -49,9 +55,9 @@ export default function Main(){
 
                      <label htmlFor="telefone">Telefone :</label>
                    <input
-                     type=""
-                      name=""
-                      id=""
+                     type="text"
+                      name="telefone"
+                      id="telefone"
                       value={telefone}
                       onChange={(event) => setTelefone(event.target.value)}
             />
@@ -62,9 +68,9 @@ export default function Main(){
 <br></br>
          <label htmlFor="regiao">Região :</label>
 <input
-type=""
-name=""
-id=""
+type="text"
+name="regiao"
+id="regiao"
 value={regiao}
 onChange={(event) => setRegiao(event.target.value)}
 />
@@ -75,13 +81,14 @@ onChange={(event) => setRegiao(event.target.value)}
 
 
             </form>
-  {listaContatos.map((contato, index) ->
+  {listaContatos.map((contato, index) =>(
                                <div> key={index}>
                                <p>{contato.nomeSalvo}</p>
                                    <p>{contato.televoneSalvo}</p>
+                                    <p>{contato.regiaoSalvo}</p>
                                    <button onClick={()=> remover(index)}</button>>X</button>
                                </div>
-                               
+                              ))} 
         </main>
     );
 }
