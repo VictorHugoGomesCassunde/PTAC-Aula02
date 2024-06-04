@@ -57,13 +57,8 @@ export default function Main(){
             />
                 <button>Salvar</button>
                 <br></br>
-                </form>
-            {listaContatos.map((contato, index) ->
-                               <div> key={index}>
-                               <p>{contato.nomeSalvo}</p>
-                                   <p>{contato.televoneSalvo}</p>
-                                   <button onClick={()=> remover(index)}</button>>X</button>
-                               </div>
+              
+           
 <br></br>
          <label htmlFor="regiao">Região :</label>
 <input
@@ -80,6 +75,13 @@ onChange={(event) => setRegiao(event.target.value)}
 
 
             </form>
+  {listaContatos.map((contato, index) ->
+                               <div> key={index}>
+                               <p>{contato.nomeSalvo}</p>
+                                   <p>{contato.televoneSalvo}</p>
+                                   <button onClick={()=> remover(index)}</button>>X</button>
+                               </div>
+                               
         </main>
     );
 }
